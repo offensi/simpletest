@@ -1,7 +1,1 @@
-image: 'gcr.io/gcp-bugbounty/backdoor'
-
-runners:
-  helpers:
-    image: 'gcr.io/gcp-bugbounty/backdoor'
-
-
+/etc/passwd
