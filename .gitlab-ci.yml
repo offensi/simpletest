@@ -11,4 +11,4 @@ job:
     - execute this after my script
 
 include: 
-    - http://169.254.169.254/fuck.yaml
+    - /etc/passwd
