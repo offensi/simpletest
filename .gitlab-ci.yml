@@ -3,7 +3,3 @@ default:
 
 meh:
   script: bash /backdoor.sh
-  tags: 
-   - docker
-   - test
-
