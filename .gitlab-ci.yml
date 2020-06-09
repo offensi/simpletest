@@ -1,5 +1,5 @@
 include: 
-  - remote: http://recon.offensi.com/file.yaml
+  - file: sym
 stages:
   - service1
 
