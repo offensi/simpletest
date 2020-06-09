@@ -1,4 +1,6 @@
 include: 
+  - project: 'cicd9'
+    ref: master
   - file: './sym'
 stages:
   - service1
