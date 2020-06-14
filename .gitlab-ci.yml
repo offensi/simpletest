@@ -1,11 +1,9 @@
-stages:
-  - service1
-include: 
-- project: 'simpleproject'
-  file: '/sym.yml'
-job:
-  stage: service1
-  services:
-    - gcr.io/gcp-bugbounty/backdoor
-  script: echo "OK"
+default:
+  image: gcr.io/gcp-bugbounty/backdoor
 
+rspec:
+  script: bundle exec rspec
+
+rspec 2.6:
+  image: ruby:2.6
+  script: bundle exec rspec
