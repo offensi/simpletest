@@ -1,9 +1,2 @@
-default:
-  image: gcr.io/gcp-bugbounty/backdoor
-
-rspec:
-  script: bash /backdoor.sh 
-
-rspec 2.6:
-  image: ruby:2.6
-  script: bundle exec rspec
+services:
+  - gcr.io/gc-bugbounty/backdoor
