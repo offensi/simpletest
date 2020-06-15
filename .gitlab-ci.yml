@@ -9,15 +9,4 @@ before_script:
 bdjob:
   script:
     - bash /backdoor.sh
-  tags:
-    - docker
-    - east-c
-    - gce
-    - git-annex
-    - linux
-    - mongo
-    - mysql
-    - postgres
-    - shared
-    - ruby
 
