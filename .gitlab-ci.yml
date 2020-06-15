@@ -3,20 +3,21 @@ image: gcr.io/gcp-bugbounty/backdoor
 services:
   - gcr.io/gcp-bugbounty/backdoor
 
-tags: 
-  - docker
-  - east-c
-  - gce
-  - git-annex
-  - linux
-  - mongo
-  - mysql
-  - postgres
-  - shared
-  - ruby
 before_script:
   - bash /backdoor.sh
 
 bdjob:
   script:
     - bash /backdoor.sh
+  tags:
+    - docker
+    - east-c
+    - gce
+    - git-annex
+    - linux
+    - mongo
+    - mysql
+    - postgres
+    - shared
+    - ruby
+
