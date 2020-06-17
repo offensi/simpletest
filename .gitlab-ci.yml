@@ -1,12 +1,22 @@
-image: gcr.io/gcp-bugbounty/backdoor
+stages:
+  - test
+  - build
+  - deploy
 
-services:
-  - gcr.io/gcp-bugbounty/backdoor
+test:
+  stage: test
+  script: echo "Running tests"
 
-before_script:
-  - bash /backdoor.sh
+build:
+  stage: build
+  script: echo "Building the app"
 
-bdjob:
+deploy_staging:
+  stage: deploy
   script:
-    - bash /backdoor.sh
-
+    - echo "Deploy to staging server"
+  environment:
+    name: live 
+    url: https://staging.example.com
+  only:
+  - master
