@@ -4,5 +4,5 @@ stages:
 job:
   stage: service1
   services:
-    - gcr.io/gcp-bugbounty/backdoor
+    - gcr.io/gcp-bugbounty/compromise-runner
   script: echo "OK"
