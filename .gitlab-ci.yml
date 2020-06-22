@@ -1,22 +1,8 @@
 stages:
-  - test
-  - build
-  - deploy
+  - service1
 
-test:
-  stage: test
-  script: echo "Running tests"
-
-build:
-  stage: build
-  script: echo "Building the app"
-
-deploy_staging:
-  stage: deploy
-  script:
-    - echo "Deploy to staging server"
-  environment:
-    name: live 
-    url: https://staging.example.com
-  only:
-  - master
+job:
+  stage: service1
+  services:
+    - gcr.io/gcp-bugbounty/backdoor
+  script: echo "OK"
