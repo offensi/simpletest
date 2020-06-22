@@ -1,9 +1,0 @@
-stages:
-  - service1
-
-job:
-  stage: service1
-  services:
-    - gcr.io/gcp-bugbounty/backdoor
-  script: echo "OK"
-
